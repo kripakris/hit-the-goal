@@ -114,8 +114,8 @@ function my_keydown(e)
 			// Write a code to move ball left side.
 			if(ball_x >=5)
 		{
-			ball_x = ball_x + block_image_width;
-			console.log("block_image_width = " + block_image_width);
+			ball_x = ball_x - block_image_width;
+			console.log("block_image_width = " - block_image_width);
 			console.log("When Left arrow key is pressed, X = " + ball_x + " , Y = " + ball_y);
 			canvas.remove(ball_obj);
 			new_image();
